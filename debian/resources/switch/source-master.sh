@@ -21,7 +21,7 @@ sed -i /usr/src/freeswitch/modules.conf -e s:'#applications/mod_curl:application
 sed -i /usr/src/freeswitch/modules.conf -e s:'#formats/mod_shout:formats/mod_shout:'
 ./bootstrap.sh -j
 #./configure --prefix=/usr/local/freeswitch --enable-core-pgsql-support --enable-system-lua --disable-fhs
-./configure --prefix=/usr/local/freeswitch --enable-core-pgsql-support --disable-fhs
+./configure --prefix=/usr/local/freeswitch --enable-core-pgsql-support --disable-fhs --enable-zrtp
 
 #make mod_shout-install
 make
